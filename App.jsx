@@ -18,13 +18,21 @@ function App() {
     setCounter((prevCounter) => prevCounter - 1);
     setCounter((prevCounter) => prevCounter - 1);
   }
+  
+  const multiplyValue = () => {
+    setCounter((prevCounter) => prevCounter * 2);
+    setCounter((prevCounter) => prevCounter * 2);
+    setCounter((prevCounter) => prevCounter * 2);
+    setCounter((prevCounter) => prevCounter * 2);
+  }
 
   return (
     <>
       <h1>useState({counter})</h1>
       <h2>Counter value: {counter}</h2>
       <button onClick={addValue}>Add Value</button>{" "}
-      <button onClick={minusValue}>Remove Value</button>
+      <button onClick={minusValue}>Remove Value</button>{" "}
+      <button onClick={multiplyValue}>Multiply Value</button>
       <p>footer: {counter}</p>
     </>
   )
