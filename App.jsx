@@ -10,6 +10,7 @@ function App() {
     setCounter((prevCounter) => prevCounter + 1);
     setCounter((prevCounter) => prevCounter + 1);
     setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
   }
 
   const minusValue = () => {
@@ -17,9 +18,11 @@ function App() {
     setCounter((prevCounter) => prevCounter - 1);
     setCounter((prevCounter) => prevCounter - 1);
     setCounter((prevCounter) => prevCounter - 1);
+    setCounter((prevCounter) => prevCounter - 1);
   }
   
   const multiplyValue = () => {
+    setCounter((prevCounter) => prevCounter * 2);
     setCounter((prevCounter) => prevCounter * 2);
     setCounter((prevCounter) => prevCounter * 2);
     setCounter((prevCounter) => prevCounter * 2);
